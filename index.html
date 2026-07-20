@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playprism | Home</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+</head>
+<style>
+        
+        /* BG */
+
+        body {
+        background: radial-gradient(circle,#2b2d42ad 10%,#2b2d42ad 90% ), url(motherboard\ background.png);
+        }
+
+        @media (max-width: 650px) {}
+
+        /* Navigation Bar */
+
+        .custom-navbar {
+            background: linear-gradient(135deg, #2b2d42 10%, #8d99ae 100%) !important; 
+            border-bottom: 3px solid #ef233c;
+        }
+
+        .custom-navbar .navbar-brand {
+            color: #ef233c !important; 
+            font-weight: 700;
+        }
+
+        .custom-navbar .nav-link {
+            color: #2b2d42 !important; 
+            transition: color 0.2s ease-in-out;
+        }
+
+        .custom-navbar .nav-link:hover, 
+        .custom-navbar .nav-link.active {
+            color: #ef233c !important; 
+        }
+        .custom-nordic-header {
+            background: linear-gradient(135deg, #2b2d42 10%, #8d99ae 100%) !important; 
+            color: #8d99ae !important;
+        }
+
+        .custom-nordic-header h1 {
+            color: #ef233c !important; 
+        }
+
+        .custom-sidebar-accent {
+            border-top: 4px solid #ef233c !important; 
+        }
+        code {
+            color: #ef233c !important;
+            font-weight: 600;
+            background-color: #f1f5f9;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+        
+        /* Info Cards */
+
+        .center-card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            margin: 1px;
+        }
+        .card-bg {
+            background-color:#202236;
+        }
+        .card-bg-2 {
+            background-color:#2b2d42;
+        }
+        .image-card-img {
+            width: 98%;
+            height: auto;
+            object-fit: cover;
+            display: block;
+            border-radius: 4px;
+        }
+        .image-card:hover {
+           transform: scale(0.98);
+        }
+        .h1-font {
+            color: #ef233c !important; 
+        }
+        .image-title {
+            padding: 14px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #ef233c !important;
+        }
+        .img-price {
+            font: 1rem;
+            font-weight: 600px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #ef233c !important;
+            background-color: #202236;
+            padding: 4px 8px;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        /* Animation Product */
+
+        .inter-box {
+            position: relative;
+            background-color:#2b2d42;
+            color:rgb(0, 0, 0);
+            padding: 1.5rem;
+            cursor: pointer;
+            transition: all .5s ease;
+            justify-content: center;
+        }
+        .inter-box:hover {
+            background-color:#2b2d427e;
+            color: #ffffff;
+        }
+        .inter-box:focus {
+            outline: 10px solid #f7f7f7;
+            outline-offset: 1px;
+        }
+        .inter-box:active {
+            transform: scale(0.93);
+        }
+        .inter-box:after {
+            content : "";
+            font-weight: bold;
+            color: #f7f7f7;
+        } 
+
+        /* Animation Banner */
+
+        .inter-box-nbg {
+            position: relative;
+            padding: 0.5rem;
+            cursor: pointer;
+            transition: all .5s ease;
+            justify-content: center;
+            border-radius: 10px;
+        }
+        .inter-box-nbg:hover {
+            color: #ffffff;
+        }
+        .inter-box-nbg:focus {
+            outline: 10px solid #f7f7f7;
+            outline-offset: 1px;
+        }
+        .inter-box-nbg:active {
+            transform: scale(0.99);
+        }
+        .inter-box-nbg:after {
+            content : "";
+            font-weight: bold;
+            color: #f7f7f7;
+        } 
+
+        /* Info Cards */
+
+        .img-banner {
+            width: 100%;
+            height: auto;
+        }
+
+        /* footer */
+
+        #footer {
+            background: linear-gradient(135deg, #2b2d42 10%, #8d99ae 100%) !important; 
+            border-top: 3px solid #ef233c;
+            padding: 1rem 1rem;
+        }
+        .footer-font {
+            font-weight: 600px;
+            color:#ef233c;
+
+        }
+        .footer-margin {
+            padding: 0rem 4rem;
+        }
+
+        /* Button */
+        
+        .link {
+            cursor: pointer;
+        }
+</style>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark custom-navbar shadow-sm sticky-top">
+    <div class="container">
+
+        <a class="navbar-brand" href="#">
+            <i class="bi bi-joystick"></i> Playprism
+        </a>
+        
+
+        <button class="navbar-toggler border-0" type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#mainDepartmentNavbar" 
+                aria-controls="mainDepartmentNavbar" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> 
+
+        <div class="collapse navbar-collapse" id="mainDepartmentNavbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="Products.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="About_Us.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="sign-in.html">Sign In</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<img src="./Mouses (red).jpg" class="img-banner mb-5 inter-box-nbg rounded-3">
+
+
+       <main class="col-12 col-md-12">
+
+            <div class="card h-100 border-0 shadow-sm p-3 card-bg m-3">
+
+                <div class="card-body">
+
+                    <div class="row g-3">
+
+                        <h1 class="h1-font" align="center">Top-Selling Products <i class="bi bi-cash-coin"></i> </h1>
+
+                <div class="col-12 col-md-4">
+                    <div class="p-3 card-bg-2 rounded-3 h-100 inter-box image-card">
+                        <img src="./gaming console.png" class="image-card-img"> 
+                        <div class="image-title"> Gaming Console </div>
+                        <div class="img-price" style="max-width: 20%;">₱500</div>
+                    </div>
+                </div>
+
+                
+                <div class="col-12 col-md-4">
+                    <div class="p-3 card-bg-2 rounded-3 h-100 inter-box image-card">
+                            <img src="./Headset.png" class="image-card-img">
+                            <div class="image-title"> Headset </div>
+                            <div class="img-price" style="max-width: 20%;">₱299</div>
+                    </div>
+                </div>
+
+                
+                <div class="col-12 col-md-4">
+                    <div class="p-3 card-bg-2 rounded-3 h-100 inter-box image-card">
+                            <img src="./mouse.png" class="image-card-img">
+                            <div class="image-title"> Mouse </div>
+                            <div class="img-price" style="max-width: 20%;">₱699</div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+<img src="./BFbanner.png" class="img-banner mt-5 mb-5 inter-box-nbg rounded-3">
+
+</div>
+<footer id="footer">
+    <div class="footer-margin">
+        <h1 class="footer-font pb-2"> Socials: </h1>
+        <p class="footer-font text-decoration-none link"><i class="bi bi-youtube"></i> YouTube</p>
+        <p class="footer-font text-decoration-none link"><i class="bi bi-facebook"></i> Facebook</p>
+        <p class="footer-font text-decoration-none link"><i class="bi bi-twitter-x"></i> Twitter</p>
+        <p class="footer-font text-decoration-none link"><i class="bi bi-tiktok"></i> Tiktok</p>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
